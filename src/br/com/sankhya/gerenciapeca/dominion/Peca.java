@@ -82,6 +82,4 @@ public class Peca {
 		return "Peca [ID=" + ID + ", titulo=" + titulo + ", duracao=" + duracao + ", data=" + data + "]";
 	}
 	
-	
-	
 }
