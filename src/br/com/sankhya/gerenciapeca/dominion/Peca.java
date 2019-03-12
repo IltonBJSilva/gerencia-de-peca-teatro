@@ -2,7 +2,9 @@ package br.com.sankhya.gerenciapeca.dominion;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 public class Peca implements Serializable{
 
@@ -11,13 +13,14 @@ public class Peca implements Serializable{
 	private String titulo;
 	private Integer duracao;
 	private Date data;
+	private List<Papel> papeis = new ArrayList<>();
 
 	public Peca() {
 	}
 	
-	public Peca(Integer iD, String titulo, Integer duracao, Date data) {
+	public Peca(Integer ID, String titulo, Integer duracao, Date data) {
 		super();
-		ID = iD;
+		ID = ID;
 		this.titulo = titulo;
 		this.duracao = duracao;
 		this.data = data;
@@ -53,6 +56,14 @@ public class Peca implements Serializable{
 
 	public void setData(Date data) {
 		this.data = data;
+	}
+	
+	public List<Papel> getPapeis() {
+		return papeis;
+	}
+
+	public void setPapeis(List<Papel> papeis) {
+		this.papeis = papeis;
 	}
 	
 	public BigDecimal exibirCustoTotal() {
