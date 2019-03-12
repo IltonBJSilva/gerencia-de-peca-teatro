@@ -1,8 +1,13 @@
 package br.com.sankhya.gerenciapeca.dominion;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class Peca {
+public class Peca implements Serializable{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	Integer ID;
 	String titulo;
 	Integer duracao;
