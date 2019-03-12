@@ -1,6 +1,7 @@
 package br.com.sankhya.gerenciapeca.dominion;
 
 import java.io.Serializable;
+import java.math.BigDecimal;
 import java.util.Date;
 
 public class Peca implements Serializable{
@@ -54,7 +55,11 @@ public class Peca implements Serializable{
 	public void setData(Date data) {
 		this.data = data;
 	}
-
+	
+	public BigDecimal exibirCustoTotal() {
+		return null;
+	}
+	
 	@Override
 	public int hashCode() {
 		final int prime = 31;
