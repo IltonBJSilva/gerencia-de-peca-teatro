@@ -84,5 +84,4 @@ public class Peca implements Serializable{
 	public String toString() {
 		return "Peca [ID=" + ID + ", titulo=" + titulo + ", duracao=" + duracao + ", data=" + data + "]";
 	}
-	
 }
