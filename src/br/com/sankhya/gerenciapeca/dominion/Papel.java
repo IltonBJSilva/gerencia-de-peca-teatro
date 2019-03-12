@@ -9,7 +9,8 @@ public class Papel implements Serializable{
 	private Integer ID;
 	private String nomePersonagem;
 	private BigDecimal acrecismos;
-	
+	private Ator ator;
+
 	Papel(){
 		
 	}
@@ -41,6 +42,14 @@ public class Papel implements Serializable{
 		return acrecismos;
 	}
 
+	public Ator getAtor() {
+		return ator;
+	}
+
+	public void setAtor(Ator ator) {
+		this.ator = ator;
+	}	
+	
 	public void setAcrecismos(BigDecimal acrecismos) {
 		this.acrecismos = acrecismos;
 	}
