@@ -9,7 +9,7 @@ public class Ator implements Serializable{
 	private Integer ID;
 	private String nome;
 	private String nacionalidade;
-	private static BigDecimal salario = BigDecimal.ZERO;
+	private BigDecimal salario = BigDecimal.ZERO;
 	
 	public Ator() {
 		super();
@@ -101,8 +101,5 @@ public class Ator implements Serializable{
 	@Override
 	public String toString() {
 		return "Ator [ID=" + ID + ", nome=" + nome + ", nacionalidade=" + nacionalidade + ", salario=" + salario + "]";
-	}
-	public static void main(String[] args) {
-		System.out.println(salario);
 	}
 }
