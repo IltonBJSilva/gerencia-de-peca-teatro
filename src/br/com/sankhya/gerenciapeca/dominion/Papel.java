@@ -10,6 +10,7 @@ public class Papel implements Serializable{
 	private String nomePersonagem;
 	private BigDecimal acrecismos;
 	private Ator ator;
+	private Peca peca;
 
 	Papel(){
 		
