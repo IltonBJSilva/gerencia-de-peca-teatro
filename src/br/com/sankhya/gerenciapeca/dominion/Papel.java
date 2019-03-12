@@ -54,6 +54,14 @@ public class Papel implements Serializable{
 	public void setAcrecismos(BigDecimal acrecismos) {
 		this.acrecismos = acrecismos;
 	}
+	
+	public Peca getPeca() {
+		return peca;
+	}
+
+	public void setPeca(Peca peca) {
+		this.peca = peca;
+	}
 
 	@Override
 	public int hashCode() {
