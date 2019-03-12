@@ -11,7 +11,7 @@ public class Ator implements Serializable{
 	private Integer ID;
 	private String nome;
 	private String nacionalidade;
-	private BigDecimal salario = BigDecimal.ZERO;
+	private BigDecimal salario;
 	private List<Papel> papeis = new ArrayList<>();
 
 	public Ator() {
@@ -58,11 +58,11 @@ public class Ator implements Serializable{
 		this.salario = salario;
 	}
 	
-	public List<Papel> getPapel() {
+	public List<Papel> getPapeis() {
 		return papeis;
 	}
 
-	public void setPapel(List<Papel> papeis) {
+	public void setPapeis(List<Papel> papeis) {
 		this.papeis = papeis;
 	}
 

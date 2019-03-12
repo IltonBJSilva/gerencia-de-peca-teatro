@@ -2,6 +2,7 @@ package br.com.sankhya.gerenciapeca.dominion;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
+import java.text.NumberFormat;
 
 public class Papel implements Serializable{
 	
@@ -11,7 +12,7 @@ public class Papel implements Serializable{
 	private BigDecimal acrecismos;
 	private Ator ator;
 	private Peca peca;
-
+		
 	Papel(){
 		
 	}
@@ -62,7 +63,12 @@ public class Papel implements Serializable{
 	public void setPeca(Peca peca) {
 		this.peca = peca;
 	}
-
+	
+	public BigDecimal exibirSalarioComAcrescimo() {
+		
+		return ator.getSalario().add(this.acrecismos);
+	}
+	
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -87,8 +93,7 @@ public class Papel implements Serializable{
 			return false;
 		return true;
 	}
-
-	@Override
+	
 	public String toString() {
 		return "Papel [ID=" + ID + ", nomePersonagem=" + nomePersonagem + ", acrecismos=" + acrecismos + "]";
 	}
