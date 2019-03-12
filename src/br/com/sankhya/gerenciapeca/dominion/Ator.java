@@ -2,6 +2,8 @@ package br.com.sankhya.gerenciapeca.dominion;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Ator implements Serializable{
 	
@@ -10,7 +12,8 @@ public class Ator implements Serializable{
 	private String nome;
 	private String nacionalidade;
 	private BigDecimal salario = BigDecimal.ZERO;
-	
+	private List<Papel> papeis = new ArrayList<>();
+
 	public Ator() {
 		super();
 	}
@@ -53,6 +56,14 @@ public class Ator implements Serializable{
 
 	public void setSalario(BigDecimal salario) {
 		this.salario = salario;
+	}
+	
+	public List<Papel> getPapel() {
+		return papeis;
+	}
+
+	public void setPapel(List<Papel> papel) {
+		this.papeis = papel;
 	}
 
 	@Override
