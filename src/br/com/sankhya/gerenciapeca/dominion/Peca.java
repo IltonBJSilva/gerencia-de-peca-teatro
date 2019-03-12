@@ -8,10 +8,10 @@ public class Peca implements Serializable{
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	Integer ID;
-	String titulo;
-	Integer duracao;
-	Date data;
+	private Integer ID;
+	private String titulo;
+	private Integer duracao;
+	private Date data;
 	
 	public Peca() {
 		// TODO Auto-generated constructor stub
