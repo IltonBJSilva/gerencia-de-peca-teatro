@@ -62,8 +62,8 @@ public class Ator implements Serializable{
 		return papeis;
 	}
 
-	public void setPapel(List<Papel> papel) {
-		this.papeis = papel;
+	public void setPapel(List<Papel> papeis) {
+		this.papeis = papeis;
 	}
 
 	@Override
