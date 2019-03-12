@@ -11,9 +11,8 @@ public class Peca implements Serializable{
 	private String titulo;
 	private Integer duracao;
 	private Date data;
-	
+
 	public Peca() {
-		// TODO Auto-generated constructor stub
 	}
 	
 	public Peca(Integer iD, String titulo, Integer duracao, Date data) {
