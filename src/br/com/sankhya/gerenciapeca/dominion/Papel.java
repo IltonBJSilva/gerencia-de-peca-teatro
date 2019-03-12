@@ -74,6 +74,4 @@ public class Papel implements Serializable{
 	public String toString() {
 		return "Papel [ID=" + ID + ", nomePersonagem=" + nomePersonagem + ", acrecismos=" + acrecismos + "]";
 	}
-	
-	
 }
